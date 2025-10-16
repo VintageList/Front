@@ -1,0 +1,140 @@
+<!DOCTYPE html> <!--Declara a versão do HTML-->
+<html lang="pt-BR"> <!--Define o idioma da página-->
+
+<!--Convite de Casamento-->
+
+    <!-- Cabeçalho da página -->
+    <head> <!-- Metadados e links para recursos externos não aparecem na página web-->
+        <title>Site de Casamento</title>
+        <meta name="description" content="Convite de Casamento de Pessoa e Pessoa">
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+
+    <body> <!-- Conteúdo principal -->
+
+        <!-- Cabeçalho -->
+        <header>
+            <img src="Casamento.jpeg" alt="Foto de alianças" width="300" height="200">
+            <h1>Bem-vindos ao nosso site de <strong>casamento!</strong></h1>
+        </header>
+
+        <!-- Conteúdo principal -->
+        <main>
+            <form id="formulario">
+                <!-- Sobre o convite -->
+                <section>
+                    <h2>Nosso Amor</h2>
+                    <p>Estamos muito felizes em compartilhar com vocês a notícia do nosso casamento! Após anos de amor e companheirismo, decidimos dar esse passo tão importante em nossas vidas.</p>
+                </section>
+
+                <!-- Sobre os noivos -->
+                <section>
+                    <h2>Sobre Nós</h2>
+                    <p>Somos um casal apaixonado que decidiu compartilhar nossa jornada de amor com vocês. Estamos muito felizes em anunciar nosso casamento e esperamos que vocês possam fazer parte desse momento especial.</p>
+                </section>
+
+                <!-- Detalhes do Evento -->
+                <section>
+                    <h2>Detalhes do Evento</h2>
+                    <ul>
+                        <li>Data: xx de mês de 20xx</li>
+                        <li>Local: <a href= "https://www.google.com/maps/place/Igreja+Presbiteriana+Nacional/@-15.8056532,-47.9033081,17z/data=!4m14!1m7!3m6!1s0x935a3ac2709c051b:0xe7dcbee7216a995d!2sIgreja+Presbiteriana+Nacional!8m2!3d-15.8056532!4d-47.9033081!16s%2Fg%2F11f6y3pnbf!3m5!1s0x935a3ac2709c051b:0xe7dcbee7216a995d!8m2!3d-15.8056532!4d-47.9033081!16s%2Fg%2F11f6y3pnbf?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D</a><iframe src="> Igreja Presbiteriana Nacional </a>
+                        <li>Hora: 16:00</li>
+                        <li>Recepção: Salão de Festas da <abbr title="Igreja Presbiteriana Nacional">IPN</abbr></li>
+                    </ul>
+                </section>
+
+                <!-- Confirmação de Presença -->
+                <section> <!--Essa parte ainda pode apresetar erros de execução-->
+                    <h2>Confirmação de Presença</h2>
+                    <p>Por favor, confirme sua presença até o dia 30 de Setembro de 2025. Você pode fazer isso enviando uma mensgem para <a href="mailto: ">Pedro Augusto</a> ou respondendo as perguntas abaixo:</p>
+                    <form>
+                        <input type="radio" id="sim" name="presenca" value="sim">
+                        <label for="sim">Sim, estarei presente</label><br>
+                        <input type="radio" id="nao" name="presenca" value="nao">
+                        <label for="nao">Não poderei comparecer</label><br>
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome Completo do Títular do convite"> <!-- placeholder é a marca d'água que aparece dentro do campo -->
+                        <label for="email">E-mail do Títular do Convite:</label>
+                        <input type="email" id="email" name="email" placeholder="E-mail do Títular...">
+                    </form>
+                </section>
+
+                <!-- Nome dos Convidados -->
+                <section>
+                    <h2>Nome dos Convidados</h2>
+                    <p>Por favor, insira o nome completo dos convidados que irão comparecer ao casamento (Considere apenas as pessoas que ainda moram com você):</p>
+                    <form> 
+                        <textarea id="nome_convidados" name="nome_convidados" rows="4" cols="50" placeholder="Digite os nomes completos dos convidados aqui..."></textarea> <!-- placeholder é a marca d'água que aparece dentro do campo -->
+                    </form>
+                </section>
+
+                <!-- Traje -->
+                <section>
+                    <h2>Traje</h2>
+                    <p>O traje para o casamento é <strong>Social</strong>. Esperamos que todos se sintam confortáveis e elegantes para celebrar conosco.</p>
+                </section>
+
+                <!-- Lista de Presentes -->
+                <section>
+                    <h2>Lista de Presentes</h2>
+                    <p>Para aqueles que desejam nos presentear, criamos uma lista de presentes em nossa loja favorita. Vocês podem acessar a lista através do link abaixo:</p>
+                    <a href="https://www.amazon.com.br/hz/wishlist/ls/3FJQZLZLZLZLZ?ref_=wl_share" target="_blank">Lista de Presentes</a>
+                </section>
+
+                <!-- Parede Histórica -->
+                <section>
+                    <h2>Parede historica</h2>
+                    <p>Deixe uma mensagem especial, um poema, uma citação ou envie uma foto da história do casal que represente o amor e a sua participação. Vamos criar juntos uma parede histórica cheia de sentimentos e emoções.</p>
+                        <form>
+                            <input type="text" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui">
+                            <input type="file" id="foto" name="foto" accept="image/*">
+                </section>
+
+                <!-- Lista de confirmação de dados -->
+                <section>
+                    <h2>Confirmação de dados</h2>
+                    <p>Confira se todos os dados estão corretos antes de enviar o formulário:</p>
+                    <details>
+                        <summary>Clique para ver os dados que você enviou</summary>
+                        <ol>
+                            <li>Nome Completo dos Convidados</li>
+                            <li>Confirmação de Presença</li>
+                            <li>Mensagem ou Foto para a Parede Histórica</li>
+                        </ol>
+                    </details>
+                    <p>Caso precise fazer alguma alteração, por favor, volte ao formulário correspondente e faça as correções necessárias.</p>
+                </section>
+
+                Formulário de Feedback 
+
+                <section>
+                    <h2>Feedback</h2>
+                    <p>Adoraríamos ouvir sua opinião sobre o nosso site de casamento! Por favor, deixe seus comentários e sugestões abaixo:</p>
+                    <form>
+                        <fieldset>
+                            <legend>Deixe seu feedback</legend>
+                            <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Escreva seu feedback aqui..."></textarea><br><br>
+                            <input type="submit" value="Enviar Feedback">
+                        </fieldset>
+                    </form>
+                </section>
+                
+                
+                <!-- Butão enviar-->
+                    <button onclick="alert('Formulário enviado com sucesso!')">Enviar Formulário</button>
+            </form>
+        </main>        
+
+        <!-- Seção adicional -->
+        <footer>
+            <!-- Contato -->
+            <h2>Contato</h2>
+            <p class="footer">Se você tiver alguma dúvida ou precisar de mais informações, não hesite em nos contatar: <a href="mailto:e-mail Pessoa" target="_blank"> Nome Pessoa</a></p>
+            <a href= target=""_blank">WhatsApp Pessoa</a>
+            <p class="footer">&copy; 2025 pessoa e pessoa. Todos os direitos reservados.</p>
+                    
+        </footer>
+        <script src="script.js" defer></script> <!--defer faz com que o script seja carregado após o HTML-->
+    </body>
+</html>
