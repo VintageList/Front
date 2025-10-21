@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Mexe com a bordas e paddings / Inclui bordas e padding na largura e altura totais dos elementos */
+}
+
+body{
+    font-family: "Lora", serif, Arial, Helvetica, sans-serif; /* Define a fonte da página */
+    font-weight: 400; /* Define a espessura da fonte */
+    background-color: #f4f0ea; /* Cor de fundo da página */
+    color: #000000; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+header { /* Estiliza o cabeçalho */
+    background-color: #f4f0ea; /* Cor de fundo do cabeçalho */
+    color: #331f19; /* Cor do texto do cabeçalho */
+    padding: 2rem; /* Espaçamento interno do cabeçalho */
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    border-bottom: 0; /*rem: unidade de medida relativa*/
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;/* Espaçamento entre os elementos filhos */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Espaçamento entre os elementos do formulário */
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espaçamento entre os elementos da seção */
+
+} 
+
+h2{
+    color: #331f19;
+    font-size: 1.5rem;
+}
+
+input [type="radio"], input [type="checkbox"]{
+    accent-color: #ccd595;
+    margin-right: 0.5rem;
+}
+
+input[type="text"], input[type="email"]{
+    width: 40%;/* Ocupa toda a largura disponível */
+    padding: 0.5rem; /* Espaçamento interno */
+    border: 2px solid #ccd595;
+    outline: none; /* Remove a borda azul ao clicar no campo */
+    border-radius: 5px;
+    background-color: transparent;
+    
+}
+
+input[type="file"]{ 
+    width: 40%;/* Ocupa toda a largura disponível */
+    padding: 0.5rem; /* Espaçamento interno */
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+input::placeholder{
+    color: #CBBBA7; /* Cor do placeholder */
+}
+
+img{
+    width: 15rem; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+details{
+    background-color: #ccd595;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+summary{
+    color: #331f19;
+    font-weight: bold;
+    cursor: pointer; /* Muda o cursor ao passar o mouse sobre o summary */
+    margin: 0.5rem;
+}
+ul{
+    background-color: #ccd595;
+    border-radius: 5px;
+    margin-left: 1.5rem; /* Adiciona margem à esquerda */
+    color: #331f19;
+}
+
+ul li{
+    margin-left: 1.3rem;
+    padding: 0.3 0.2rem; /* Espaçamento entre os itens da lista */
+}
+
+ol{
+    margin-left: 1.5rem; /* Adiciona margem à esquerda */
+    color: #331f19;
+}
+
+ol li{
+    padding: 0.2rem; /* Espaçamento entre os itens da lista */
+}
+
+fieldset{
+    border: 2px solid #ccd595;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #f4f0ea;
+}
+
+legend{
+    color: #331f19;
+    padding: 0 0.5rem; /* Espaçamento interno do legend, o 0 remove o espaçamento vertical e o 0.5rem adiciona espaçamento horizontal */
+}
+
+textarea{
+    background-color: transparent;
+    outline: none; /* Remove a borda azul ao clicar no campo */
+    border: 2px solid #ccd595;
+    border-radius: 5px;
+}
+
+button{
+    background-color: #ccd595;
+    border: none;
+    padding: 0.3rem;
+    color: #331f19;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a{
+    color: #2f00ff;
+}
+
+footer{
+    background-color: #331f19;
+    padding: 2rem;
+    text-align: center;
+}
+/* Estiliza o rodapé */
+.footer{
+    color: #f4f0ea;
+}
+
+footer a{
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #ccd595; /* Cor dos links no rodapé */
+}
